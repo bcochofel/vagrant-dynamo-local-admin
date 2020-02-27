@@ -41,6 +41,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "docker" do |d|
     d.pull_images "instructure/dynamo-local-admin"
     d.run "instructure/dynamo-local-admin",
-      args: "-p 8000:8000 -it --rm"
+      args: "-p 8000:8000 -it"
   end
 end
